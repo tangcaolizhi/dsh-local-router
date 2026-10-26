@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# build / render outputs
+out/
+dist/
+coverage/
+
+# local runtime files
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
+
+# DSH local profile artifacts
+*.local
