@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Local Router",
+    "description": "Sends short, self-contained prompts to a local Ollama model and leaves complex work on the cloud. Falls back silently to the cloud when Ollama is unavailable."
+  }
+}
