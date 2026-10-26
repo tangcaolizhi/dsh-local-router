@@ -1,0 +1,54 @@
+{
+  "name": "dsh-local-router",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Route simple prompts to a local Ollama model and keep complex work on the cloud. · 简单问题走本地 Ollama，复杂问题继续走云端。",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "ollama",
+    "local-llm",
+    "router",
+    "token-saving",
+    "qqbot"
+  ],
+  "author": "进攻 D 点的沈凤翔",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "docs/preview.png"
+  ],
+  "scripts": {
+    "check": "node --check index.js",
+    "test": "node --test test/pure.test.mjs",
+    "test:integration": "node --test test/router.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": "^22.15.0 || >=24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tangcaolizhi/dsh-local-router.git"
+  },
+  "homepage": "https://github.com/tangcaolizhi/dsh-local-router#readme",
+  "bugs": {
+    "url": "https://github.com/tangcaolizhi/dsh-local-router/issues"
+  }
+}
