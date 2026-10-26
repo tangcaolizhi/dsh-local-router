@@ -1,0 +1,14 @@
+# dsh-local-router bundle layer: insert one Host row with safe defaults.
+# Override it from the profile's cordis.patch.yml by targeting id `local-router`
+# and supplying only the fields you want to change (missing fields use defaults).
+- insert:
+    - id: local-router
+      name: 'dsh-local-router'
+      config:
+        enabled: true
+        baseUrl: http://localhost:11434
+        model: qwen2:1.5b
+        maxChars: 80
+        keywordFilter: true
+        timeoutMs: 5000
+        prewarm: true
